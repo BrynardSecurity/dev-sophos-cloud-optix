@@ -1,7 +1,7 @@
 provider "aws" {
-  region = var.AWS_DEFAULT_REGION
+  region                  = var.AWS_DEFAULT_REGION
   shared_credentials_file = "~/.aws/credentials"
-  profile = "default"
+  profile                 = "default"
 }
 
 provider "aws" {
@@ -97,7 +97,7 @@ terraform {
 data "aws_caller_identity" "current" {}
 
 output "account_id" {
-  value = "${data.aws_caller_identity.current.account_id}"
+  value = data.aws_caller_identity.current.account_id
 }
 output "external_id" {
   value = var.EXTERNAL_ID
