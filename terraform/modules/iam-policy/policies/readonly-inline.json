@@ -1,0 +1,23 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [{
+		"Effect": "Allow",
+		"Resource": "*",
+		"Action": [
+			"elasticfilesystem:DescribeMountTargetSecurityGroups",
+			"elasticfilesystem:DescribeMountTargets",
+			"sns:ListSubscriptions",
+			"s3:GetAccountPublicAccessBlock",
+			"ce:GetCostAndUsage",
+			"ce:GetCostForecast",
+			"ce:GetUsageForecast",
+			"eks:List*",
+			"detective:ListGraphs",
+			"ec2:SearchTransitGatewayRoutes",
+		    "ec2:GetTransitGatewayRouteTableAssociations",
+			"support:DescribeTrustedAdvisorCheckResult",
+			"support:RefreshTrustedAdvisorCheck",
+			"ecr:DescribeImages"
+		]
+	}]
+}
