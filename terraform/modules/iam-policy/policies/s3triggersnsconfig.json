@@ -1,0 +1,23 @@
+{
+  "TopicConfigurations": [
+    {
+      "Id": "s3eventtriggersSNS",
+      "TopicArn": "%%TOPIC_ARN%%",
+      "Events": ["s3:ObjectCreated:*"],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "suffix",
+              "Value": "%%fileSuffix%%"
+            },
+            {
+              "Name": "prefix",
+              "Value": "%%folderPrefix%%"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
