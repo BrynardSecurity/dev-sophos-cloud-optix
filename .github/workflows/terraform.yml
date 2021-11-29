@@ -51,8 +51,6 @@ on:
   pull_request:
 
 jobs:
-  env:
-    working-directory: ./terraform/resource_files
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
