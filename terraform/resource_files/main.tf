@@ -1,3 +1,13 @@
+terraform {
+  backend "remote" {
+    organization = "BrynardSecurity"
+
+    workspaces {
+      name = "dev-sophos-cloud-optix"
+    }
+  }
+}
+
 provider "aws" {
   region                  = var.AWS_DEFAULT_REGION
   shared_credentials_file = "~/.aws/credentials"
