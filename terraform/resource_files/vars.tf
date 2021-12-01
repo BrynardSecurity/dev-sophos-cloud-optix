@@ -10,6 +10,7 @@ variable "OPTIX_RESOURCE_VALUE" {}
 variable "FLOW_LOGS_S3_RETENTION" {}
 variable "CLOUDTRAIL_S3_RETENTION" {}
 variable "S3_FORCE_DESTROY" {}
+variable "CLOUDTRAIL_LOGS" {}
 
 variable "SET_RETENTION_ON_S3_CLOUDTRAIL" {}
 variable "SET_RETENTION_ON_S3_FLOW" {}
