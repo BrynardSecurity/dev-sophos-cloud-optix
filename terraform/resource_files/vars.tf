@@ -5,7 +5,7 @@ variable "DNS_PREFIX_FLOW" {}
 variable "FLOW_LOG_S3_BUCKET_PREFIX" {}
 variable "CLOUDTRAIL_S3_BUCKET_PREFIX" {}
 variable "AWS_DEFAULT_REGION" {
-    default = "us-west-2"
+  default = "us-west-2"
 }
 variable "OPTIX_RESOURCE_KEY" {}
 variable "OPTIX_RESOURCE_VALUE" {}
