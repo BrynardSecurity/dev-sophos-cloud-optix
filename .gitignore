@@ -30,3 +30,4 @@ override.tf.json
 terraform.zip
 terraform/resource_files/.terraform
 terraform/resource_files/.terraform.lock.hcl
+terraform/resource_files/variables.auto.tfvars
