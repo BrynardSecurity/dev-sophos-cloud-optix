@@ -107,4 +107,5 @@ output "account_id" {
 }
 output "external_id" {
   value = var.EXTERNAL_ID
+  sensitive = true
 }
