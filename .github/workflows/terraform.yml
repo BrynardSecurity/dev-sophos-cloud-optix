@@ -34,7 +34,7 @@ jobs:
       
       - name: Terraform Validate
         id: validate
-        run: terraform validate -var-file=vars.tf -no-color
+        run: terraform validate -no-color
 
       - name: Terraform Plan
         id: plan
