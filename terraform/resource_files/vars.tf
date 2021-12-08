@@ -1,58 +1,58 @@
 variable "EXTERNAL_ID" {
-    default = ""
+  default = ""
 }
 variable "CUSTOMER_ID" {
-    default = ""
+  default = ""
 }
 variable "DNS_PREFIX_CLOUDTRAIL" {
-    default = ""
+  default = ""
 }
 variable "DNS_PREFIX_FLOW" {
-    default = ""
+  default = ""
 }
 variable "FLOW_LOG_S3_BUCKET_PREFIX" {
-    default = ""
+  default = ""
 }
 variable "CLOUDTRAIL_S3_BUCKET_PREFIX" {
-    default = ""
+  default = ""
 }
 variable "AWS_DEFAULT_REGION" {
   default = "us-west-2"
 }
 variable "OPTIX_RESOURCE_KEY" {
-    default = ""
+  default = ""
 }
 variable "OPTIX_RESOURCE_VALUE" {
-    default = ""
+  default = ""
 }
 variable "FLOW_LOGS_S3_RETENTION" {
-    default = ""
+  default = ""
 }
 variable "CLOUDTRAIL_S3_RETENTION" {
-    default = ""
+  default = ""
 }
 variable "S3_FORCE_DESTROY" {
-    default = ""
+  default = ""
 }
 variable "CLOUDTRAIL_LOGS" {
-    default = ""
+  default = ""
 }
 
 variable "SET_RETENTION_ON_S3_CLOUDTRAIL" {
-    default = ""
+  default = ""
 }
 variable "SET_RETENTION_ON_S3_FLOW" {
-    default = ""
+  default = ""
 }
 variable "FLOWLOG_REGIONS" {
-    default = ""
+  default = ""
 }
 variable "FLOW_ONE_REGION_VALUE" {
-    default = ""
+  default = ""
 }
 variable "FLOW_LOGS" {
-    default = ""
+  default = ""
 }
 variable "ENABLE_FLOW_ONE_REGION" {
-    default = ""
+  default = ""
 }
