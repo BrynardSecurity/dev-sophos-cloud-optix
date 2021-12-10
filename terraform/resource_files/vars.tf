@@ -11,14 +11,14 @@ variable "FLOW_LOGS_S3_RETENTION" { default = "1" }
 variable "CLOUDTRAIL_S3_RETENTION" { default = "2190" }
 variable "S3_FORCE_DESTROY" { default = false }
 
-variable "SET_RETENTION_ON_S3_CLOUDTRAIL" { 
+variable "SET_RETENTION_ON_S3_CLOUDTRAIL" {
   default = true
   type    = bool
-  }
-variable "SET_RETENTION_ON_S3_FLOW" { 
+}
+variable "SET_RETENTION_ON_S3_FLOW" {
   default = true
   type    = bool
-  }
+}
 variable "FLOWLOG_REGIONS" {
   type = list(string)
   default = [
@@ -40,16 +40,16 @@ variable "FLOWLOG_REGIONS" {
     "eu-north-1",
   ]
 }
-variable "FLOW_ONE_REGION_VALUE" { default = "us-west-1"  }
-variable "FLOW_LOGS" { 
+variable "FLOW_ONE_REGION_VALUE" { default = "us-west-1" }
+variable "FLOW_LOGS" {
   default = true
   type    = bool
-   }
-variable "CLOUDTRAIL_LOGS" { 
+}
+variable "CLOUDTRAIL_LOGS" {
   default = true
   type    = bool
-   }
-variable "ENABLE_FLOW_ONE_REGION" { 
+}
+variable "ENABLE_FLOW_ONE_REGION" {
   default = false
   type    = bool
 }
