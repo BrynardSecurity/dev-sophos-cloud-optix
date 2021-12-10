@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
     types: [closed]
-    
+
 defaults:
   run:
     working-directory: terraform/resource_files
@@ -27,7 +27,7 @@ jobs:
 
       - name: Terraform Format
         id: fmt
-        run: terraform fmt -write=check -check
+        run: terraform fmt -write=true -check
 
       - name: Terraform Init
         id: init
