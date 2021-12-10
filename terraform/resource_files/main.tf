@@ -1,3 +1,20 @@
+terraform {
+  required_providers {
+    aws = {
+      source                = "hashicorp/aws"
+      version               = ">= 2.7.0"
+      configuration_aliases = [aws.us-east-1, aws.us-east-2, aws.us-west-1, aws.us-west-2]
+    }
+  }
+  backend "remote" {
+    organization = "BrynardSecurity"
+
+    workspaces {
+      name = "dev-sophos-cloud-optix"
+    }
+  }
+}
+
 provider "aws" {
   region                  = var.AWS_DEFAULT_REGION
   shared_credentials_file = "~/.aws/credentials"
