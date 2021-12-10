@@ -5,7 +5,7 @@ on:
     branches:
       - main
   pull_request:
-
+    - closed
 defaults:
   run:
     working-directory: terraform/resource_files
