@@ -23,7 +23,6 @@ resource "aws_s3_bucket" "avid" {
     bucket = "${var.s3_bucket_prefix}-${var.account_id}-${var.region_append}"
     acl    = "private"
     force_destroy = var.s3_force_destroy
-    
 
   lifecycle_rule {
         id = "s3flowsdeleteafterNdays"

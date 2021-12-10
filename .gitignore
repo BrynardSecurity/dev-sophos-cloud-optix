@@ -31,3 +31,5 @@ terraform.zip
 terraform/resource_files/.terraform
 terraform/resource_files/.terraform.lock.hcl
 terraform/resource_files/variables.auto.tfvars
+terraform_old
+terraform.zip
