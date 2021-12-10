@@ -1,19 +1,7 @@
-# sophos cloud optix
-
-terraform {
-  backend "remote" {
-    organization = "BrynardSecurity"
-
-    workspaces {
-      name = "dev-sophos-cloud-optix"
-    }
-  }
-}
-
 provider "aws" {
-  region                  = var.AWS_DEFAULT_REGION
+  region = var.AWS_DEFAULT_REGION
   shared_credentials_file = "~/.aws/credentials"
-  profile                 = "default"
+  profile = "default"
 }
 
 provider "aws" {
@@ -102,12 +90,15 @@ provider "aws" {
   region = "ca-central-1"
 }
 
+terraform {
+  required_version = ">= 0.12"
+}
+
 data "aws_caller_identity" "current" {}
 
 output "account_id" {
-  value = data.aws_caller_identity.current.account_id
+  value = "${data.aws_caller_identity.current.account_id}"
 }
 output "external_id" {
-  value     = var.EXTERNAL_ID
-  sensitive = true
+  value = var.EXTERNAL_ID
 }
